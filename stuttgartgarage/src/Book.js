@@ -2,10 +2,8 @@ import React from "react";
 // import {image1} from'./images/interior.jpg';
 import {Form,FormGroup,Label} from 'reactstrap';
 export default function Book(){
-
     return(
 <div id="book">
-   
  <div id="form">
  <Form >
      <h1>Request for assitance/Booking</h1>
