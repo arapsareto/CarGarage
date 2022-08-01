@@ -10,7 +10,6 @@ export default function Completed(){
             setCars(data)
           });
       }, []);
-
       const displayed =cars.map((car)=>{
         return(
             <div className="fetched">

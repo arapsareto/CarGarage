@@ -1,7 +1,7 @@
 ## By
  Martin sareto
 ## Description
-This project is about  a car garage that specializes in Mercedes Benz.The garage provides variety of services
+This project is about  a car garage that specializes in Mercedes Benz.The garage provides variety of services for all the desired needs
 ## Features
 1.Know about Stuttgart autos
 2.Completed cars/repaired
