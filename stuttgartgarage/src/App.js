@@ -24,10 +24,7 @@ function App() {
 
       
       </BrowserRouter>
-      {/* <NavBar />
-      <About />
-      <Completed />
-      <Book /> */}
+      
     </div>
   );
 }
