@@ -36,7 +36,6 @@ export default function Book(){
     </fieldset>
     <input type="submit" value="Submit" />
   </form>
-   
  </Form>
  </div>
     
