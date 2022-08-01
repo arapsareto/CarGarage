@@ -37,8 +37,6 @@ export default  function Review()
        
       });
   }
-
-
     return(
         <div>
             <h5>Give a review of a repaired sample</h5>
