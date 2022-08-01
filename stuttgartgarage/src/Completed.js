@@ -10,7 +10,6 @@ export default function Completed(){
           .then((r) => r.json())
           .then((data) => {
             setCars(data)
-           
           });
       }, []);
 
