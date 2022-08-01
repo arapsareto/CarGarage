@@ -40,7 +40,7 @@ export default  function Review()
     return(
         <div>
             <h5>Give a review of a repaired sample</h5>
-  <form action="#" onSubmit={handleSubmit}>
+  <form action="#" onSubmit={handleSubmit }>
     <fieldset>
       <label for="car">Car:
         <input type="text" name="car name" required  onChange={Car}/>
@@ -55,4 +55,5 @@ export default  function Review()
         </div>
     )
     
+
     }
