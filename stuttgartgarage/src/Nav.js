@@ -13,8 +13,6 @@ export function NavBar(){
                 <NavLink to='/completed' style={styles}>Completed</NavLink>
                 <NavLink to='/book' style={styles}>Book</NavLink>
                 <NavLink to='/review' style={styles}>Review</NavLink>
-                
-
             </ul>
         </nav>
     );
