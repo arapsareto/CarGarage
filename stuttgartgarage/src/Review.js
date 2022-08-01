@@ -67,7 +67,7 @@ export default function Review(){
         return(
 
             <div>
-                <h3>Review</h3>
+                <h3>Reviews from customers</h3>
             </div>
         )
 
