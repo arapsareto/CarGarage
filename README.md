@@ -16,7 +16,7 @@ This project is about  a car garage that specializes in Mercedes Benz.The garage
 2.CSS
 
 ## Deployment Link
-https://saretophase2deploy.netlify.app/
+https://stuttgartcargarage.netlify.app/
 ## Blog 
 https://arapsareto.hashnode.dev/stuttgart-auto-garage
 ## Licence
