@@ -15,7 +15,7 @@ export default function Completed(){
             <div className="fetched">
                  
                   <p> <strong>Car</strong>-{car.Car} ,<strong>Year</strong>:{car.Year}</p>
-                  {/* <p>Year of Manufature-{car.Year}</p> */}
+                 
                   <img  src={car.Image}  width='100px'/>
 
             </div>
