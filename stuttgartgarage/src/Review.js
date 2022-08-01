@@ -15,9 +15,7 @@ export default  function Review()
   function handleYear(event) {
     setYear( event.target.value );
      console.log(event.target.value);
-  }
-
-  
+  }  
   function handleSubmit ( event )
   {
    
