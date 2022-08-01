@@ -19,10 +19,6 @@ function App() {
       <Route  path='/completed' exact component={Completed}/>
       <Route  path='/book' exact component={Book}/>
       <Route  path='/review' exact component={Review}/>
-
-      
-
-      
       </BrowserRouter>
       
     </div>
