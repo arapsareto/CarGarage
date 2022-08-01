@@ -1,76 +1,64 @@
+import { setYear } from "date-fns";
 import React from "react";
-import { useState } from "react";
+import { useState,useEffect } from "react";
+import { Form, FormGroup } from "reactstrap";
+
+export default  function Review()
+{
+    const [Car, setCar] = useState("");
+    const [Year, setYear] = useState("");
+    
 
 
-export default function Review(){
+  function handlename(event) {
+    setCar( event.target.value );
+    console.log(event.target.value);
+  }
+  function handleYear(event) {
+    setYear( event.target.value );
+     console.log(event.target.value);
+  }
 
-    const [Car , setCar] = useState("")
-    const [Year , setYear] = useState("")
-    const [Image , setImage] = useState("")
-
-    function handleCar(event){
-        setCar(event.target.value)
-    }
-
-    function handleYear(event){
-        setYear(event.target.value)
-    }
-
-    function handleImage(event){
-        setImage(event.target.value)
-    }
-
-    function Submit(e){
-        e.preventDefault()
-
-        if (Car===''){
-            alert('car not added')
-        }
-
-        else if(Image===''){
-            alert('image not added')
-        }
-
-        else if(Year===''){
-            alert('year not added')
-        }
-
-        else{
-            console.log(Car);
-            const newCar={
-                Car:Car,Year:Year,Image:Image
-
-            };
-            console.log(newCar);
-            fetch("http://localhost:3000/Stuttgart",
-            {
-                method:'POST',
-                headers:(
-                    'Content-Type',"application/json"
-                ),
-                body: JSON.stringify(newCar),
-
-
-                
-            })
-            
-            .then((r) => r.json())
-            .then((newCar) => {
-            //   handleNew(newCar);
-              setCar("");
-              setYear("");
-              setImage("");
-             
-            });
-          }; 
-        }
-        return(
-
-            <div>
-                <h3>Reviews from customers</h3>
-            </div>
-        )
-
-    }
-
+  
+  function handleSubmit ( event )
+  {
    
+    event.preventDefault();
+    const formData = { "Car": Car, "Year": Year};
+    console.log( formData );
+    fetch("http://localhost:3000/Stuttgart", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        setCar("");
+        setYear("");
+       
+      });
+  }
+
+
+    return(
+        <div>
+            <h5>Give a review of a repaired sample</h5>
+  <form action="#" onSubmit={handleSubmit}>
+    <fieldset>
+      <label for="car">Car:
+        <input type="text" name="car name" required  onChange={Car}/>
+      </label>
+      <label for="car">Year:
+        <input type="text" name="car name" required onChange={Year} />
+      </label>
+        <input type="submit" value="Submit" onClick={handleSubmit}/>
+   </fieldset>
+    
+  </form>
+        </div>
+    )
+    
+    }
