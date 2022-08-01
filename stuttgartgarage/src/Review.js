@@ -7,8 +7,6 @@ export default  function Review()
 {
     const [Car, setCar] = useState("");
     const [Year, setYear] = useState("");
-    
-
 
   function handlename(event) {
     setCar( event.target.value );
