@@ -10,7 +10,7 @@ This project is about  a car garage that specializes in Mercedes Benz.The garage
 1.Access to a computer or any other garget
 2.Internet
 ## Installation 
-1.Clone into this repo -https://github.com/arapsareto/Phase-2-project
+1.Clone into this repo -https://github.com/arapsareto/CarGarage
 ##technology Used
 1.React Js
 2.CSS
